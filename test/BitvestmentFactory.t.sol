@@ -12,7 +12,7 @@ contract BitvestmentFactoryTest is Test {
     IBitvestment public bitvestment;
     IERC20 public token;
 
-    fallback() external payable {}
+    receive() external payable {}
 
     function setUp() public {
         factory = new BitvestmentFactory();
