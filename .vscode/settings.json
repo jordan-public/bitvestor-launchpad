@@ -1,6 +1,8 @@
 {
-    "cSpell.words": [
-        "Bitvestment",
-        "bitvestor"
-    ]
+  "cSpell.words": [
+    "Bitvestment",
+    "bitvestor"
+  ],
+  "solidity.packageDefaultDependenciesContractsDirectory": "src",
+  "solidity.packageDefaultDependenciesDirectory": "lib"
 }
