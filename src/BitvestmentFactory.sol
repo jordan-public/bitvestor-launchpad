@@ -12,6 +12,7 @@ contract BitvestmentFactory is IBitvestmentFactory, Ownable {
     mapping(address => uint256) public tokenIndex; // into tokens array
     IERC20[] public tokens;
     IBitvestment[] public bitvestments;
+    IBitvestment public lastBitvestment; // = address(0)
 
     constructor () Ownable(msg.sender) {}
 
@@ -23,6 +24,7 @@ contract BitvestmentFactory is IBitvestmentFactory, Ownable {
     ) external returns (IBitvestment bitvestment) {
         bitvestment = new Bitvestment(_name, _symbol, _totalSupply, _initialPrice);
         bitvestments.push(bitvestment);
+        lastBitvestment = bitvestment;
         IERC20 _token = bitvestment.token();
         tokenIndex[address(_token)] = tokens.length;
         tokens.push(_token);

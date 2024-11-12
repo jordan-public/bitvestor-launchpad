@@ -12,4 +12,5 @@ interface IBitvestmentFactory {
     ) external returns (IBitvestment bitvestment);
     function withdrawFees() external;
     function receiveFees() external payable;
+    function lastBitvestment() external view returns (IBitvestment);
 }

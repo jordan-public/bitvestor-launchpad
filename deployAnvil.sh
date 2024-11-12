@@ -9,3 +9,8 @@ set -e
 
 # To deploy and verify our contract
 forge script script/BitvestmentFactory.s.sol:Deploy --rpc-url "http://127.0.0.1:8545/" --sender $SENDER --private-key $PRIVATE_KEY --broadcast -v
+
+./push_artifacts.sh "BitvestmentFactory.s.sol/31337"
+
+# cd webapp_template
+# npm run build
