@@ -1,7 +1,7 @@
 {
   "chain": 31337,
   "contractName": "BitvestmentFactory",
-  "contractAddress": "0x38288e03211fd049d9a10ec72333d121ebda8178",
+  "contractAddress": "0xe53f8e8a492e85e87ae553acfb676ceff50740a6",
   "abi": [
     {
       "type": "constructor",

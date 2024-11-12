@@ -8,7 +8,7 @@ set -e
 . ./.env
 
 # To deploy and verify our contract
-forge script script/BitvestmentFactory.s.sol:Deploy --rpc-url "rpc.testnet.citrea.xyz" --sender $SENDER --private-key $PRIVATE_KEY --broadcast -v
+forge script script/BitvestmentFactory.s.sol:Deploy --rpc-url "https://rpc.testnet.citrea.xyz" --sender $SENDER --private-key $PRIVATE_KEY --broadcast -v
 
 ./push_artifacts.sh "BitvestmentFactory.s.sol/5115"
 
