@@ -1,6 +1,6 @@
 # Demo
 
-The video can be downloaded [here]() and on [YouTube]().
+The video can be downloaded [here](./Bitvestment.mov) and on [YouTube](https://youtu.be/CCvrs0gst0g).
 
 # The contracts are deployed on the following blockchains:
 
